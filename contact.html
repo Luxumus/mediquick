@@ -1,10 +1,166 @@
-<!-- Contact Section -->
-<section id="contact">
-  <h2>Contact Us</h2>
-  <form>
-    <input type="text" placeholder="Name" required />
-    <input type="email" placeholder="Email" required />
-    <textarea placeholder="Message" required></textarea>
-    <button type="submit">Send Message</button>
-  </form>
-</section>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MediQuick</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <link
+      rel="shortcut icon"
+      href="/Techno Logos/Icons/number 2.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header class="bg-white p-4 text-black">
+      <nav
+        class="container mx-auto md:flex lg:justify-between sm:block md:justify-center items-center pb-1 border-b-2 border-gray-400"
+      >
+        <div class="flex items-center justify-center ml-0 md:ml-12 md:mb-2">
+          <a
+            href="/index.html"
+            class="text-4xl font-bold flex items-center bg-green-100 rounded-2xl p-4"
+          >
+            <img
+              src="/Techno Logos/number 2.png"
+              alt="logo"
+              width="40"
+              height="40"
+              class="mr-4"
+            />
+            <span class="inline">MediQuick</span>
+          </a>
+        </div>
+        <div
+          class="hidden lg:flex space-x-4 items-center justify-center mr-12 text-xl"
+        >
+          <a
+            href="/index.html"
+            class="font-bold border-green-400 border-0 bg-green-100 hover:text-white hover:bg-green-600 focus:ring-4 focus:ring-green-300 rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none"
+            >Home</a
+          >
+          <a
+            href="/products.html"
+            class="font-bold border-green-400 border-0 bg-green-100 hover:text-white hover:bg-green-600 focus:ring-4 focus:ring-green-300 rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none"
+            >Products</a
+          >
+          <a
+            href="/about.html"
+            class="font-bold border-green-400 border-0 bg-green-100 hover:text-white hover:bg-green-600 focus:ring-4 focus:ring-green-300 rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none"
+            >About</a
+          >
+          <a
+            href="/login.html"
+            class="font-bold border-green-400 border-0 bg-green-100 hover:text-white hover:bg-green-600 focus:ring-4 focus:ring-green-300 rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none dark:focus:ring-green-800"
+            >Login</a
+          >
+        </div>
+        <div
+          class="lg:hidden flex items-center justify-center absolute right-2 top-8 mx-4"
+        >
+          <button
+            id="mobile-menu-button"
+            type="button"
+            class="inline-flex justify-center p-2 rounded-md hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-green-500"
+            aria-controls="mobile-menu"
+            aria-expanded="false"
+          >
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <div>
+      <h1 class="text-3xl font-bold text-center w-full md:text-4xl">
+        <span class="font-black text-green-800">Contact Us!</span>
+      </h1>
+    </div>
+    <div class="flex items-center justify-center p-12">
+      <div class="mx-auto w-full max-w-[550px]">
+        <form action="https://formbold.com/s/FORM_ID" method="POST">
+          <div class="mb-5">
+            <label
+              for="name"
+              class="mb-3 block text-base font-medium text-green-800"
+            >
+              Full Name
+            </label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Full Name"
+              class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-bold text-black outline-none focus:border-green-600 focus:shadow-md"
+            />
+          </div>
+          <div class="mb-5">
+            <label
+              for="email"
+              class="mb-3 block text-base font-medium text-green-800"
+            >
+              Email Address
+            </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="example@domain.com"
+              class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-bold text-black outline-none focus:border-green-600 focus:shadow-md"
+            />
+          </div>
+          <div class="mb-5">
+            <label
+              for="subject"
+              class="mb-3 block text-base font-medium text-green-800"
+            >
+              Subject
+            </label>
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              placeholder="Enter your subject"
+              class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-bold text-black outline-none focus:border-green-600 focus:shadow-md"
+            />
+          </div>
+          <div class="mb-5">
+            <label
+              for="message"
+              class="mb-3 block text-base font-medium text-green-800"
+            >
+              Message
+            </label>
+            <textarea
+              rows="4"
+              name="message"
+              id="message"
+              placeholder="Type your message"
+              class="w-full resize-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-bold text-black outline-none focus:border-green-800-600 focus:shadow-md"
+            ></textarea>
+          </div>
+          <div>
+            <button
+              class="hover:shadow-form rounded-md bg-green-800-100 py-3 px-8 text-base font-semibold text-white outline-none"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
